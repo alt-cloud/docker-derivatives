@@ -1,0 +1,7 @@
+from = "{{ registry }}{{ organization }}/distroless-static:{{ branch }}"
+
+builder-install-packages = ["toybox"]
+files = ["/bin/toybox"]
+
+entrypoint = ["/bin/toybox"]
+cmd = ["sh"]
